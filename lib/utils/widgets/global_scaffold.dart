@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_faculdade/app/controllers/navigation_controller.dart';
-import 'package:flutter_faculdade/app/screens/addProdutos_screen.dart';
 import 'package:flutter_faculdade/app/screens/home_screen.dart';
-import 'package:flutter_faculdade/app/screens/listProdutos.screen.dart';
 import 'package:get/get.dart';
 
 
@@ -13,8 +11,7 @@ class GlobalScaffold extends StatelessWidget {
   final NavigationController _controller = Get.find<NavigationController>();
     final List<Widget> screens = [
       HomeScreen(),
-      AddprodutosScreen(),
-      ListProdutosScreen(),
+
     ];
 
   @override
@@ -25,7 +22,7 @@ class GlobalScaffold extends StatelessWidget {
         return 
           Scaffold(
             appBar: AppBar(
-              title: Text(
+              title: Text( 
                 _controller.appBarTitle.value,
                 style: TextStyle(
                   color: Colors.white
