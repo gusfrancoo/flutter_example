@@ -48,7 +48,7 @@ class GlobalScaffold extends StatelessWidget {
               BottomNavigationBar(
                 currentIndex: _controller.selectedIndex.value,
                 onTap: _controller.changePage,
-                backgroundColor: Colors.green,
+                backgroundColor: Colors.deepOrange,
                 selectedItemColor: Colors.white,
                 unselectedItemColor: Colors.white70,
                 elevation: 0, // Remove sombra se necessário

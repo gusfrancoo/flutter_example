@@ -17,13 +17,13 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Teste Flutter',
       theme: ThemeData(
-        primarySwatch: Colors.green, // Define a cor primária do tema
+        primarySwatch: Colors.deepOrange, // Define a cor primária do tema
         brightness: Brightness.light, // Tema claro
         textTheme: TextTheme(
           bodyLarge: TextStyle(fontSize: 18, color: Colors.black), // Estilo de texto global
         ),
         appBarTheme: AppBarTheme(
-          backgroundColor: Colors.green, // Cor da AppBar
+          backgroundColor: Colors.deepOrange, // Cor da AppBar
           titleTextStyle: TextStyle(fontSize: 20, color: Colors.white),
         ),
       ),
