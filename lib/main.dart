@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Teste Flutter',
       theme: ThemeData(
         primarySwatch: Colors.deepOrange, // Define a cor primária do tema

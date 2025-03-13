@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_faculdade/app/controllers/navigation_controller.dart';
+import 'package:flutter_faculdade/app/routes/app_routes.dart';
 import 'package:flutter_faculdade/app/screens/home_screen.dart';
 import 'package:get/get.dart';
 
@@ -21,13 +22,24 @@ class GlobalScaffold extends StatelessWidget {
       () { 
         return 
           Scaffold(
+            
             appBar: AppBar(
+              actions: [
+                IconButton(
+                  icon: Icon(Icons.logout),
+                  onPressed: () {
+                    Get.offNamed(AppRoutes.login);
+                  },
+                )
+              ],
+              iconTheme: const IconThemeData(color: Colors.white),
               title: Text( 
                 _controller.appBarTitle.value,
                 style: TextStyle(
                   color: Colors.white
                 ),
               ),
+              // actionsIconTheme: ,
             ),      
             body:
             AnimatedSwitcher(
